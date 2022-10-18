@@ -1,1 +1,192 @@
-placeholder
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: inset 0 0 100px black;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(./fonts/press-start-2p-font/PressStart2P-vaV7.ttf);
+}
+
+
+#background-video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content-box{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    width: 750px;
+    height: 450px;
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    color: white;
+    font-family: pixel, sans-serif,'Segoe UI', Tahoma, Geneva, Verdana    ;
+   
+}
+
+
+.left{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left img{
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 20px;
+    margin-left: 30px;
+   
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    width: 400px;
+    padding: 20px;
+   
+}
+
+
+.header{
+    line-height: 1.8;
+}
+
+.seperator{
+    background-image: linear-gradient(60deg,pink,purple);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+form fieldset{
+    margin-top: 20px;
+}
+.inputs {
+    width: 100%;
+    column-count: 2;
+
+}
+
+.inputs label{
+    font-size: 8px;
+}
+
+.inputs input{
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.faction{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.faction input{
+    appearance: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+label[for="corpo"]{
+    background-image: linear-gradient(60deg,gray,red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+label[for="nomad"]{
+    background-image: linear-gradient(60deg,yellow,orange);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+label[for="streetkid"]{
+    background-image: linear-gradient(60deg,blue,lightgreen);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.seperator{
+    padding: 10px 0px 10px 0px
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.new_account{
+    padding: 8px 14px;
+    border-radius: 5px;
+    background-image: linear-gradient(165deg,pink,purple);
+    font-size: 12px;
+    line-height: 1.8;
+    font-family: pixel, sans-serif,'Segoe UI', Tahoma, Geneva, Verdana    ;
+    
+}
+.login{
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: blueviolet;
+    font-size: 14px;
+    font-family: pixel, sans-serif,'Segoe UI', Tahoma, Geneva, Verdana    ;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+input:focus{
+    outline: 2px solid purple;
+    border-radius: 5px;
+    background-color: lightpink;
+}
+
+
+.faction_legend{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Night City</title>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted><source src="./images/neon-samurai-cyberpunk-night-city-4k-live-wallpaper.mp4" type="video/mp4"></video>
+    <div class="content-box">
+        <div class="left">
+            <img src="./images/a2e0f31030cd20e520883d0cc12f48f0.gif" alt="purple city">
+        </div>
+        <div class="right">
+            <div class="header">
+                <div>This will be the first day of the rest of your life...</div>
+                <div class="seperator">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></div>
+            </div>
+            <div class="signup">
+                <div>Who will you become?</div>
+                <form>
+                    <div class="inputs">
+                        <div>
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" required>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" required>
+                        </div>
+                        <div>
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" minlength="8" required>
+                        </div>
+                        <div>
+                            <label for="cpass">Confirm Password</label>
+                            <input type="password" name="cpass" id="cpass" required>
+                        </div>
+                    </div>
 
+                    <fieldset>
+                        <legend class="faction_legend">Choose your faction</legend>
+                            <div class="faction">
+                                <div>
+                                    <label for="corpo">Corpo</label>
+                                    <input type="radio" name="faction" id="corpo">
+                                </div>
+                                <div>
+                                    <label for="nomad">Nomad</label>
+                                    <input type="radio" name="faction" id="nomad">
+                                </div>
+                                <div>
+                                    <label for="streetkid">St.kid</label>
+                                    <input type="radio" name="faction" id="streetkid">
+                                </div>
+                            </div>
+                    </fieldset>
+                    <div class="seperator">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></div>
+                    <div class="footer">
+                        <div><button class="new_account" type="submit">Create Account</button></div>
+                        <div>Already have an account?<button class="login">Login</button></div>
+                    </div>    
+                </form>
+                
+            </div>
+    </div> 
+</body>
+</html>
