@@ -30,8 +30,8 @@ body{
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    width: 750px;
-    height: 450px;
+    width: 65%;
+    height: 75%;
     background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
     color: white;
     font-family: pixel, sans-serif,'Segoe UI', Tahoma, Geneva, Verdana    ;
@@ -101,7 +101,16 @@ form fieldset{
     appearance: none;
     border: none;
     border-radius: 5px;
+    opacity: .8;
+    outline: none;
 }
+
+input:focus{
+    outline: 2px solid purple;
+    border-radius: 5px;
+    opacity: 1;   
+}
+
 
 .faction{
     display: flex;
@@ -124,13 +133,13 @@ label[for="corpo"]{
 
 
 label[for="opulent"]{
-    background-image: linear-gradient(60deg,yellow,orange);
+    background-image: linear-gradient(60deg,blueviolet,yellow);
     -webkit-background-clip: text;
     color: transparent;
 }
 
 label[for="streetkid"]{
-    background-image: linear-gradient(60deg,blue,lightgreen);
+    background-image: linear-gradient(60deg,yellow,orange);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -198,16 +207,11 @@ button:hover{
 }
 
 input[type="radio"]:checked+label{ 
-    outline: 2px dashed blueviolet;
+    outline: 2px solid blueviolet;
     outline-offset: 5px;
     border-radius: 5px;
 } ​
 
-input:focus{
-    outline: 2px solid purple;
-    border-radius: 5px;
-    background-color: lightpink;
-}
 
 
 .faction_legend{
