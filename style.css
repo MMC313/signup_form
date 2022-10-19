@@ -122,7 +122,8 @@ label[for="corpo"]{
     color: transparent;
 }
 
-label[for="nomad"]{
+
+label[for="opulent"]{
     background-image: linear-gradient(60deg,yellow,orange);
     -webkit-background-clip: text;
     color: transparent;
@@ -133,6 +134,27 @@ label[for="streetkid"]{
     -webkit-background-clip: text;
     color: transparent;
 }
+
+
+.hover_card{
+    width: 275px;
+    height: 367px;
+    display: none;
+}
+
+.hover_label:hover .hover_card{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: -90px
+    
+}
+
+.hover_label{
+    position: relative;
+}
+
+
 
 .seperator{
     padding: 10px 0px 10px 0px
@@ -155,6 +177,10 @@ label[for="streetkid"]{
     font-family: pixel, sans-serif,'Segoe UI', Tahoma, Geneva, Verdana    ;
     
 }
+
+.exist{
+    font-size: 12px;
+}
 .login{
     appearance: none;
     border: none;
@@ -165,11 +191,17 @@ label[for="streetkid"]{
 
 }
 
+
+
 button:hover{
     cursor: pointer;
 }
 
-
+input[type="radio"]:checked+label{ 
+    outline: 2px dashed blueviolet;
+    outline-offset: 5px;
+    border-radius: 5px;
+} ​
 
 input:focus{
     outline: 2px solid purple;
