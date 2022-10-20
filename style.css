@@ -6,6 +6,7 @@ body{
     height: 100vh;
     width: 100vw;
     box-shadow: inset 0 0 100px black;
+    
 }
 
 @font-face {
@@ -27,11 +28,12 @@ body{
 }
 
 .content-box{
+    flex-grow: 0 1 auto;
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    width: 65%;
-    height: 75%;
+    width: 750px;
+    height: 450px;
     background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
     color: white;
     font-family: pixel, sans-serif,'Segoe UI', Tahoma, Geneva, Verdana    ;
@@ -40,8 +42,7 @@ body{
 
 
 .left{
-    /*width: 350px;*/
-    width: 65%;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,8 +61,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content:center; 
-    /*width: 400px;*/
-    width: 65%;
+    width: 400px;
     padding: 20px;
    
 }
@@ -107,10 +107,10 @@ form fieldset{
     outline: none;
 }
 
-input:focus{
+.inputs input:focus{
     outline: 2px solid purple;
     border-radius: 5px;
-    opacity: 1;   
+    opacity: .8;   
 }
 
 
@@ -120,6 +120,9 @@ input:focus{
     margin-top: 15px;
 }
 
+.faction_legend{
+    text-align: center;
+}
 .faction input{
     appearance: none;
     display: flex;
@@ -212,13 +215,13 @@ input[type="radio"]:checked+label{
     outline: 2px solid blueviolet;
     outline-offset: 5px;
     border-radius: 5px;
+    appearance: none;
+    border: none;
 } ​
 
 
 
-.faction_legend{
-    text-align: center;
-}
+
 
 
 
